@@ -20,7 +20,11 @@
         Kindle 2 PDF
       </div>
       <v-spacer />
-      <v-btn href="https://twitter.com/@dakmig" depressed color="blue"
+      <v-btn
+        class="sm-none"
+        href="https://twitter.com/@dakmig"
+        depressed
+        color="blue"
         >Follow on Twitter</v-btn
       >
     </v-app-bar>
@@ -90,7 +94,7 @@
       <v-container
         class="d-flex flex-column justify-center align-center fill-height"
       >
-        <h2 class="mb-6 font-weight-bold">
+        <h2 class="mb-6 font-weight-bold text-center">
           The easiest and most secure way to convert your kindle highlights to
           PDF!
         </h2>
@@ -100,6 +104,7 @@
           height="400"
           width="500"
           class="pa-2"
+          max-width="100%"
           shaped
         >
           <file-upload
@@ -331,5 +336,11 @@ export default {
   font-weight: 500;
   line-height: 1.95rem;
   margin-bottom: 0.75rem;
+}
+
+@media (max-width: 600px) {
+  .sm-none {
+    display: none !important;
+  }
 }
 </style>
