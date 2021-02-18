@@ -144,20 +144,32 @@
             </div>
           </file-upload>
         </v-sheet>
-        <div>
+        <div class="mt-4">
           <v-btn
-            class="mt-4 mr-4"
+            class="mr-4"
             color="success"
             :disabled="files.length === 0"
             @click="parseKindle"
             >Convert</v-btn
           >
           <v-btn
-            class="mt-4"
+            class="mr-4"
             color="error"
             @click="$refs.upload.clear()"
             :disabled="files.length === 0"
             >Clear</v-btn
+          >
+          <v-btn
+            @click="
+              openSnack(
+                'Connect kindle to your Laptop / PC and find the My Clippings.txt file in Documents',
+                'warning',
+                -1
+              )
+            "
+            target="_blank"
+            color="warning"
+            >Where can I find Clippings?</v-btn
           >
         </div>
       </v-container>
