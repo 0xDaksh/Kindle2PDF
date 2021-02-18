@@ -1,24 +1,10 @@
-# kindle2pdf
+# Kindle2PDF
 
-## Project setup
-```
-yarn install
-```
+> The easiest and msot secure way to convert your Kindle highlights to PDF!
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+### Demo
 
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+<a href="https://www.loom.com/share/ac2744b7af41418d828dafbcece8543b">
+    <p>Kindle2PDF - Easiest way to convert kindle highlights to PDF! - Watch Video</p>
+    <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/ac2744b7af41418d828dafbcece8543b-with-play.gif">
+</a>
