@@ -2,6 +2,21 @@
   <v-app>
     <v-app-bar app flat color="primary" dark>
       <div class="d-flex align-center display-1 font-weight-bold">
+        <svg
+          style="height: 2.5rem; width: 2.5rem"
+          class="mr-2"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2.2"
+            d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+          ></path>
+        </svg>
         Kindle 2 PDF
       </div>
       <v-spacer />
@@ -33,7 +48,20 @@
         <v-card>
           <v-toolbar dark color="primary">
             <v-btn icon dark @click="dialog = false">
-              <v-icon>mdi-close</v-icon>
+              <svg
+                style="height: 2rem; width: 2rem"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2.5"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
             </v-btn>
             <v-toolbar-title>Generate PDF</v-toolbar-title>
             <v-spacer></v-spacer>
@@ -83,12 +111,25 @@
             class="fill-height fill-width d-flex align-center justify-center font-weight-bold title-1 flex-column"
             :disabled="files.length > 0"
           >
-            <v-icon
-              :color="files.length === 0 ? 'primary' : 'success'"
-              x-large
+            <svg
               class="mb-4"
-              >mdi-file-upload</v-icon
+              :class="{
+                'primary--text': files.length === 0,
+                'success--text': files.length > 0,
+              }"
+              style="height: 3rem; width: 3rem"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2.3"
+                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"
+              ></path>
+            </svg>
 
             <p v-if="files.length === 0">
               Drop or Click to upload clippings.txt
