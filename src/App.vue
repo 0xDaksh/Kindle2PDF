@@ -144,16 +144,16 @@
             </div>
           </file-upload>
         </v-sheet>
-        <div class="mt-4">
+        <div class="text-center">
           <v-btn
-            class="mr-4"
+            class="mt-4 mr-4"
             color="success"
             :disabled="files.length === 0"
             @click="parseKindle"
             >Convert</v-btn
           >
           <v-btn
-            class="mr-4"
+            class="mt-4 mr-4"
             color="error"
             @click="$refs.upload.clear()"
             :disabled="files.length === 0"
@@ -169,6 +169,7 @@
             "
             target="_blank"
             color="warning"
+            class="mt-4"
             >Where can I find Clippings?</v-btn
           >
         </div>
